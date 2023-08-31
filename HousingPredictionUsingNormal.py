@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from numpy.linalg import inv
 
+# Set a random seed for reproducibility
+np.random.seed(42)
+
 # Read the dataset
 df = pd.read_csv('housing.csv', header=None, delimiter=' ')
 X = df.iloc[:, :-1].values
